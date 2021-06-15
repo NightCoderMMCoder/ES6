@@ -30,3 +30,9 @@ const User = {
 };
 // Object Literals
 console.log(User.fullName());
+
+console.log(User["firstName"]);
+
+let work = "programmer";
+User[work] = true;
+console.log(User);
