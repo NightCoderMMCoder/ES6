@@ -18,3 +18,15 @@ test();
 const arrowFunction = (arrow, age) => console.log(`${arrow} function ${age}`);
 
 arrowFunction("arrow", 20);
+
+let firstName = "Aung Myat";
+let lastName = "Oo";
+const User = {
+  firstName,
+  lastName,
+  fullName() {
+    return `${User.firstName} ${User.lastName}`;
+  },
+};
+// Object Literals
+console.log(User.fullName());
