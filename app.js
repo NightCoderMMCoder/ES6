@@ -9,3 +9,12 @@ if (programmer) {
 console.log(message);
 
 const timer = 5;
+
+function test() {
+  console.log("function");
+}
+test();
+
+const arrowFunction = (arrow, age) => console.log(`${arrow} function ${age}`);
+
+arrowFunction("arrow", 20);
