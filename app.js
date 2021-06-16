@@ -36,3 +36,21 @@ console.log(User["firstName"]);
 let work = "programmer";
 User[work] = true;
 console.log(User);
+
+let mgmgAge = age; // primitive Data type
+age = 40;
+console.log(mgmgAge);
+
+let UserOne = { ...User };
+console.log(UserOne);
+
+let UserTwo = {
+  ...User,
+  work: ["web developer", "android developer"],
+};
+console.log(UserTwo);
+
+let fruit = ["apple", "orange"];
+let testing = ["aung myat oo", "myo thant kyaw"];
+
+console.log([...fruit, ...testing]);
