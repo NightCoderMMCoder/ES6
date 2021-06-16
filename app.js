@@ -107,3 +107,24 @@ function displayLists(fruits) {
   });
 }
 displayLists(fruits);
+
+let users = [
+  {
+    id: 0,
+    name: "Aung Myat Oo",
+    age: 30,
+  },
+  {
+    id: 1,
+    name: "Myo Thant Kyaw",
+    age: 40,
+  },
+];
+
+const findUser = users.find((user) => {
+  return user.id === 1;
+});
+const findIndex = users.findIndex((user) => {
+  return user.id == 1;
+});
+console.log(findUser);
