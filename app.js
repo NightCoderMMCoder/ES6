@@ -78,3 +78,10 @@ console.log(todos);
 todos.forEach((todo, idx) => {
   console.log(todo, idx);
 });
+
+let nums = [2, 3, 4, 6];
+const newArray = nums.map((num) => num * 2);
+console.log(newArray);
+
+const total = nums.reduce((total, num) => total + num, 0);
+console.log(total);
