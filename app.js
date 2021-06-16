@@ -128,3 +128,27 @@ const findIndex = users.findIndex((user) => {
   return user.id == 1;
 });
 console.log(findUser);
+
+let car = {
+  carName: {
+    name: "Toyota",
+  },
+  price: 1000000000,
+};
+
+Object.values(car).forEach((c) => {
+  // console.log(c);
+});
+for (let [key, value] of Object.entries(car)) {
+  console.log(key, value);
+}
+// console.log(car.carName);
+// const {
+//   price,
+//   carName: { name: testingCar },
+// } = car;
+// console.log(testingCar, price);
+
+// let cars = ["toyota", "mercedes"];
+// const [car2, car1] = cars;
+// console.log(car1, car2);
