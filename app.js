@@ -85,3 +85,25 @@ console.log(newArray);
 
 const total = nums.reduce((total, num) => total + num, 0);
 console.log(total);
+
+const ul = document.querySelector("ul");
+const input = document.querySelector("input");
+const fruits = ["Apple", "Orange", "Grape"];
+
+// case sensitive
+input.addEventListener("input", (e) => {
+  ul.innerHTML = "";
+  console.log(e.target.value);
+  let newFruitsArray = fruits.filter((fruit) =>
+    fruit.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
+  );
+  console.log(newFruitsArray);
+  displayLists(newFruitsArray);
+});
+
+function displayLists(fruits) {
+  fruits.forEach((fruit) => {
+    ul.innerHTML += `<li>${fruit}</li>`;
+  });
+}
+displayLists(fruits);
