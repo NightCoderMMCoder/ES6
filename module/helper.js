@@ -1,11 +1,11 @@
 const PORT = 5500;
 
 function testing() {
-  console.log("testing");
+  console.log("test");
 }
 
-function exportDefault() {
-  console.log("exportDefault");
+export default function exportDefault() {
+  console.log("export default from helper");
 }
-export default exportDefault;
+
 export { PORT, testing };
