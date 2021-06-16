@@ -56,12 +56,25 @@ let testing = ["aung myat oo", "myo thant kyaw"];
 console.log([...fruit, ...testing]);
 
 // Rest Parameter
-function restParameter(name, age, ...num) {
+function restParameter(name, age, ...nums) {
   console.log(name, age);
   let total = 0;
-  for (let i = 0; i < num.length; i++) {
-    total += num[i];
+  // for (let i = 0; i < nums.length; i++) {
+  //   total += nums[i];
+  // }
+  for (idx in nums) {
+    total += nums[idx];
   }
   console.log(total);
 }
 restParameter("Mg Mg", "age", 1, 3, 5, 6);
+
+const todos = [{ task: "Go Shopping" }, { task: "Buy Tickets" }];
+console.log(todos);
+
+// for (todo of todos) {
+//   console.log(todo);
+// }
+todos.forEach((todo, idx) => {
+  console.log(todo, idx);
+});
