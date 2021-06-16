@@ -54,3 +54,14 @@ let fruit = ["apple", "orange"];
 let testing = ["aung myat oo", "myo thant kyaw"];
 
 console.log([...fruit, ...testing]);
+
+// Rest Parameter
+function restParameter(name, age, ...num) {
+  console.log(name, age);
+  let total = 0;
+  for (let i = 0; i < num.length; i++) {
+    total += num[i];
+  }
+  console.log(total);
+}
+restParameter("Mg Mg", "age", 1, 3, 5, 6);
